@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.content {
+	max-width: 1252px;
+	margin: 0 auto;
+}
+
+.head-image {
+	width: 100%;
+}
+
+.section-name {
+	margin: 10px 0;
+}
+
+.modules {
+	margin-bottom: 60px;
+}
+
+.section-name-border {
+	display: inline-block;
+	vertical-align: top;
+	width: 202px;
+	border-top: 5px solid #c3c3c3;
+	margin-bottom: 30px;
+}
+
+.module {
+	height: 50px;
+	border: 1px solid #646464;
+	background-color: #e2e2e2;
+}
+
+.modules-gallery {
+	text-align: center;
+}
+
+footer {
+	height: 400px;
+}
