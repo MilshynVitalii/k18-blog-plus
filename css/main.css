@@ -3,6 +3,160 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.menu {
+	background-color: #cfe5ef;
+	height: 150px;
+	margin-bottom: 70px;
+
+}
+
+.menu .modules {
+	max-width: 1252px;
+	margin: 0 auto;
+}
+
+
+.module-header {
+	height: 150px;
+	/*border: 1px solid #646464;*/
+}
+
+.logo-img {
+	display: inline-block;
+
+
+}
+.logo {
+	vertical-align: middle;
+}
+
+.logo-text {
+	line-height: 150px;
+	display: inline-block;
+	font-size: 48px;
+	font-weight: 700;
+	font-style: italic;
+	text-transform: uppercase;
+	color: #333333;
+	vertical-align: middle;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.top-menu {
+	display: table-cell;
+	height: 150px;
+	vertical-align: middle;
+	font-size: 0;
+}
+
+.top-menu li{
+	display: inline-block;
+	position: relative;
+}
+
+.top-menu > li:first-child {
+	margin-left: 20px;
+}
+
+.top-menu > li > a {
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #333;
+	padding: 0 20px;
+}
+
+.top-menu > li + li::before {
+	content: "|";
+	font-size: 20px;
+	display: inline-block;
+	position: absolute;
+	left: -3px;
+	top: -1px;
+
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  width: 100%;
+}
+
+.sub-menu > li a {
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	color: #333;
+	line-height: 28px;
+}
+
+.sub-menu li a:hover {
+	padding-left: 10px;
+	transition: 0.2s all;
+}
+
+.sub-menu li a:active {
+	font-size: 18px;
+	padding-left: 10px;
+	transition: 0.1s all;
+}
+
+
+.top-menu li:hover {
+	background-color: #fff;
+}
+
+.top-menu li:hover .sub-menu {
+	display: block;
+	width: 180px;
+	padding: 20px;
+	border-radius: 0 5px 5px 5px;
+	box-shadow: 1px 2px 4px -2px rgba(0,0,0,1);
+}
+
+.button-login {
+	height: 150px;
+	position: relative;
+}
+
+.button-login .login {
+	width: 125px;
+	height: 60px;
+	border: none;
+	background-color: #fff;
+	position: absolute;
+	right: 0;
+	top: 30%;
+	text-transform: uppercase;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.login:hover {
+	box-shadow: inset -1px -1px 10px -4px rgba(0,0,0,1), 1px 2px 4px -1px rgba(0,0,0,0.9);
+	/*border: 1px solid #b7d8e5;*/
+	
+	outline: 3px solid rgba(183, 216, 229, 0.4);
+}
+
+.login:active {
+	box-shadow: inset 1px 1px 10px -4px rgba(0,0,0,0.6);
+	border: 1px solid #b7d8e5;
+	
+}
+
+:focus {
+	outline: none;
+}
+
 .content {
 	max-width: 1252px;
 	margin: 0 auto;
