@@ -141,14 +141,15 @@ ul {
 }
 
 .login:hover {
-	box-shadow: inset -1px -1px 10px -4px rgba(0,0,0,1), 1px 2px 4px -1px rgba(0,0,0,0.9);
-	/*border: 1px solid #b7d8e5;*/
-	
+	/*font-size: 21px;*/
+	box-shadow: inset -1px -1px 10px -4px rgba(0, 0, 100, 0.1), 1px 2px 4px -1px rgba(0, 0, 100,0.9);
+	/*background: linear-gradient(to top, #bad1db 10%, #cfe5ef, #ddf4ff,#ffffff 80%);*/
 	outline: 3px solid rgba(183, 216, 229, 0.4);
 }
 
 .login:active {
-	box-shadow: inset 1px 1px 10px -4px rgba(0,0,0,0.6);
+	font-size: 17px;
+	box-shadow: inset 1px 1px 10px -4px rgba(0, 0, 100,0.6);
 	border: 1px solid #b7d8e5;
 	
 }
@@ -190,6 +191,82 @@ ul {
 
 .modules-gallery {
 	text-align: center;
+}
+
+/* user-info section*/
+
+.user-info {
+	padding: 28px 0;
+}
+
+.user-info .user-name {
+	font-size: 20px;
+	margin-right: 30px;
+}
+
+.module-text-date {
+	position: relative;
+	font-size: 16px;
+	color: #6e6e6e;
+	margin-left: 25px;
+}
+
+.module-text-date::before{
+	content: "";
+	background: url(../images/calendar.png);
+	display: inline-block;
+	width: 16px;
+	height: 18px;
+	margin-right: 10px;
+	position: absolute;
+	top: 0px;
+	right: 100%;
+}
+
+.user-info .text {
+	font-size: 16px;
+	color: #797979;
+	line-height: 23px;
+}
+
+.item {
+	position: relative;
+	margin-top: 30px;
+}
+.item-photo {
+	position: relative;
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+}
+
+.item::after {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	position: absolute;
+	z-index: 5;
+	right: 8px;
+	top: 0;
+}
+
+.item::before {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	position: absolute;
+	z-index: 5;
+	left: 8px;
+	bottom: 43px;
+}
+
+.item .item-text {
+	font-size: 12px;
+	text-align: left;
+	margin-left: 20px;
 }
 
 footer {
